@@ -89,8 +89,8 @@ app.post('/employees', async(req, res) => {
 });
 
 
-app.put('/employee/:id', async(req, res) => {
-    try {
+// app.put('/employee/:id', async(req, res) => {
+    app.put('/employee/:id', async(req, res) => {    try {
         const data = req.body;
        
         const update = await employeeModule.findById(req.params.id);
