@@ -127,7 +127,7 @@ app.delete('/employee/:id', async(req, res) => {
 const port = process.env.port;
 app.listen(port , ()=>{
     try {
-        console.log(`Server is live on port ${port}`)
+        console.log(`Server is live on port 8080`)
     } catch (error) {
         console.log('this error from connection function')
     }
